@@ -1,0 +1,10 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Name
+        searchable: true
+        type: partial
+        path: $/october/test/controllers/people/_mobile.htm

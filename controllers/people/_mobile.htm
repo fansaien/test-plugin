@@ -1,0 +1,26 @@
+<div class="ca_mobile_cell_container">
+    <div class="ca_mobile_cell_main">
+        <h3><?php echo $record->name ?></h3>
+        <div class="ca_mobile_cell_row">
+            <label>Name:</label>
+            <span><?php echo $record->name ?? '' ?></span>
+        </div>
+        <div class="ca_mobile_cell_row">
+            <label>Bio:</label>
+            <span>I am a user, <?php echo $record->bio ?? ''  ?></span>
+        </div>
+        <div class="ca_mobile_cell_row">
+            <label>Url:</label>
+            <span>
+                <a href="https://www.google.com">Open It</a>
+                <!--button onclick="window.open('https://www.google.com', '_blank');event.stopPropagation();return false;" class='btn btn-secondary btn-sm'> Open </button-->
+            </span>
+        </div>
+        <div class="ca_mobile_cell_row">
+            <label>Updated At:</label>
+            <span>
+                <?php echo $record->updated_at; ?>
+            </span>
+        </div>
+    </div>
+</div>
