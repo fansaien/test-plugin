@@ -9,6 +9,7 @@ comments:
     readOnly: true
     view:
         filter: $/october/test/models/comment/scopes.yaml
+        toolbarButtons: add|link|unlink|delete
     manage:
         context: relation
         recordsPerPage: 10
