@@ -63,6 +63,11 @@ class Plugin extends PluginBase
                 'permissions' => ['october.test.access_plugin'],
 
                 'sideMenu' => [
+                    'comments' => [
+                        'label' => 'Comments',
+                        'icon' => 'icon-database',
+                        'url' => Backend::url('october/test/comments'),
+                    ],
                     'people' => [
                         'label' => 'People',
                         'icon' => 'icon-database',

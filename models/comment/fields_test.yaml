@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # Hide this field for context 'relation'
+    post:
+        type: relation
+        nameFrom: name
+        emptyOption: -- Select Post --
+        comment: This Comment belongs to the Post selected above.
+        context: create
+
+    post[name]:
+        comment: This Comment belongs to the Post selected above.
+        disabled: true
+        context: [update, preview]
+
+    name:
+        label: Author Name
+        commentAbove: Text field, inside a popup.
+        span: auto
